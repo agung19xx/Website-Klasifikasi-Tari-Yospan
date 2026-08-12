@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tentang | Tari Yosim Pancar
+    </title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="{{ url_for('index') }}"
+           class="brand">
+
+            <img src="{{ url_for('static', filename='images/logo_yospan.png') }}"
+                 alt="Logo Yospan">
+
+            <span>
+                Tari Yosim Pancar
+            </span>
+
+        </a>
+
+
+        <div class="nav-menu">
+
+            <a href="{{ url_for('index') }}">
+                Beranda
+            </a>
+
+            <a href="{{ url_for('tentang') }}"
+               class="active">
+                Tentang
+            </a>
+
+            <a href="{{ url_for('klasifikasi') }}">
+                Klasifikasi
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <span class="eyebrow">
+            TENTANG WEBSITE
+        </span>
+
+        <h1>
+            Mengenal Sistem Klasifikasi
+        </h1>
+
+        <p>
+            Media pembelajaran gerakan dasar Tari Yosim Pancar
+            berbasis Convolutional Neural Network.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTENT -->
+
+<section class="section">
+
+    <div class="container about-content">
+
+
+        <!-- 01 -->
+
+        <article class="about-card">
+
+            <span class="about-number">
+                01
+            </span>
+
+            <div>
+
+                <h2>
+                    Tentang Website
+                </h2>
+
+                <p>
+                    Website ini merupakan media pembelajaran yang
+                    dikembangkan untuk membantu pengguna mengenali
+                    dan mempelajari gerakan dasar Tari Yosim Pancar.
+                    Website memanfaatkan teknologi Convolutional
+                    Neural Network (CNN) untuk melakukan klasifikasi
+                    terhadap gambar yang menampilkan pose gerakan tari.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 02 -->
+
+        <article class="about-card">
+
+            <span class="about-number">
+                02
+            </span>
+
+            <div>
+
+                <h2>
+                    Tujuan
+                </h2>
+
+                <p>
+                    Website ini bertujuan memberikan media pembelajaran
+                    yang lebih interaktif dalam mengenali gerakan dasar
+                    Tari Yosim Pancar. Melalui sistem klasifikasi,
+                    pengguna dapat memperoleh informasi mengenai
+                    gerakan pada gambar yang diunggah berdasarkan kelas
+                    gerakan yang telah dipelajari oleh model.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 03 -->
+
+        <article class="about-card">
+
+            <span class="about-number">
+                03
+            </span>
+
+            <div>
+
+                <h2>
+                    Cara Kerja Sistem
+                </h2>
+
+                <p>
+                    Pengguna mengunggah gambar yang menampilkan pose
+                    gerakan Tari Yosim Pancar. Gambar kemudian diproses
+                    oleh model CNN dan diklasifikasikan ke dalam salah
+                    satu kelas gerakan dasar yang telah ditentukan.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- STEPPER -->
+
+        <div class="process-flow">
+
+            <div class="process-step">
+
+                <div class="process-icon">
+                    01
+                </div>
+
+                <h3>
+                    Unggah Gambar
+                </h3>
+
+                <p>
+                    Pilih gambar gerakan tari.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <div class="process-icon">
+                    02
+                </div>
+
+                <h3>
+                    Proses Klasifikasi
+                </h3>
+
+                <p>
+                    Gambar diproses oleh CNN.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <div class="process-icon">
+                    03
+                </div>
+
+                <h3>
+                    Hasil Gerakan
+                </h3>
+
+                <p>
+                    Sistem menampilkan gerakan.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <div class="process-icon">
+                    04
+                </div>
+
+                <h3>
+                    Pelajari Gerakan
+                </h3>
+
+                <p>
+                    Pelajari langkah gerakannya.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 04 -->
+
+        <article class="about-card">
+
+            <span class="about-number">
+                04
+            </span>
+
+            <div>
+
+                <h2>
+                    Ruang Lingkup
+                </h2>
+
+                <p>
+                    Website ini secara khusus dikembangkan untuk
+                    klasifikasi gerakan dasar Tari Yosim Pancar.
+                    Kelas gerakan yang dikenali sistem terbatas pada
+                    gerakan yang digunakan dalam proses pelatihan model.
+                    Website ini tidak ditujukan untuk mengidentifikasi
+                    atau membandingkan Tari Yosim Pancar dengan tarian
+                    lain.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- 05 -->
+
+        <article class="about-card">
+
+            <span class="about-number">
+                05
+            </span>
+
+            <div>
+
+                <h2>
+                    Teknologi yang Digunakan
+                </h2>
+
+                <p>
+                    Sistem klasifikasi menggunakan metode
+                    Convolutional Neural Network (CNN) yang dilatih
+                    menggunakan dataset citra gerakan dasar Tari
+                    Yosim Pancar dan diintegrasikan ke dalam website
+                    untuk melakukan klasifikasi terhadap gambar
+                    dari pengguna.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- NOTICE -->
+
+        <div class="notice-box">
+
+            <div class="notice-icon">
+                !
+            </div>
+
+            <div>
+
+                <h3>
+                    Perhatian
+                </h3>
+
+                <p>
+                    Sistem ini dirancang khusus sebagai media
+                    pembelajaran gerakan dasar Tari Yosim Pancar.
+                    Hasil klasifikasi bergantung pada kualitas gambar
+                    dan kelas gerakan yang telah dipelajari oleh model.
+                    Sistem tidak dirancang untuk menentukan apakah
+                    suatu gambar merupakan Tari Yosim Pancar atau bukan,
+                    serta tidak digunakan untuk mengklasifikasikan jenis
+                    tarian di luar ruang lingkup penelitian.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     TOMBOL NAVIGASI BAWAH
+========================================================= -->
+
+<div class="classification-navigation">
+
+    <a href="{{ url_for('index') }}" class="btn-back">
+        Kembali ke Beranda
+    </a>
+
+    <a href="{{ url_for('klasifikasi') }}" class="btn-reset">
+        Klasifikasi Gerakan
+    </a>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            © 2026 Tari Yosim Pancar |
+            Klasifikasi Gerakan Menggunakan CNN
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
