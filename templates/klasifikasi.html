@@ -92,7 +92,7 @@
 
         <p>
             Unggah gambar gerakan untuk mengetahui hasil
-            klasifikasi berdasarkan model CNN.
+            klasifikasi berdasarkan fitur pose tubuh.
         </p>
 
     </div>
@@ -318,15 +318,9 @@
                             -
                         </h2>
 
-                        <p>
-                            Gerakan yang terdeteksi berdasarkan
-                            hasil klasifikasi model CNN.
-                        </p>
-
-
                         <button type="button"
                                 id="learnButton"
-                                class="btn btn-primary">
+                                class="btn btn-primary hidden">
 
                             Pelajari Gerakan
 
@@ -402,7 +396,7 @@
                         id="nextStep"
                         class="btn btn-primary">
 
-                    Langkah Selanjutnya 
+                    Langkah Selanjutnya
 
                 </button>
 
@@ -417,7 +411,7 @@
                         id="backToResult"
                         class="btn btn-outline">
 
-                     Kembali ke Hasil Klasifikasi
+                    Kembali ke Hasil Klasifikasi
 
                 </button>
 
@@ -429,21 +423,29 @@
 
 </section>
 
+
 <!-- =========================================================
      TOMBOL NAVIGASI BAWAH
 ========================================================= -->
 
 <div class="classification-navigation">
 
-    <a href="{{ url_for('index') }}" class="btn-back">
-         Kembali ke Beranda
+    <a href="{{ url_for('index') }}"
+       class="btn-back">
+
+        Kembali ke Beranda
+
     </a>
 
-    <a href="{{ url_for('klasifikasi') }}" class="btn-reset">
-         Mulai Ulang
+    <a href="{{ url_for('klasifikasi') }}"
+       class="btn-reset">
+
+        Mulai Ulang
+
     </a>
 
 </div>
+
 
 <!-- =========================================================
      FOOTER
@@ -461,9 +463,14 @@
 
 </footer>
 
-<!-- JAVASCRIPT -->
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
+
 </body>
+
 </html>

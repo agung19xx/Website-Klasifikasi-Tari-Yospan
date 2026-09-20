@@ -675,7 +675,14 @@ if (classifyButton) {
 
             classifyButton.disabled =
                 true;
+                
+            // Sembunyikan tombol Pelajari Gerakan
+            // sampai hasil klasifikasi baru tersedia
+            learnButton.classList.add(
+                "hidden"
+            );
 
+currentMovement = null;
 
             const formData =
                 new FormData();
@@ -714,38 +721,63 @@ if (classifyButton) {
                 }
 
 
-                // =================================================
-                // HASIL KLASIFIKASI
-                // =================================================
+            // =================================================
+            // HASIL KLASIFIKASI
+            // =================================================
 
                 resultPlaceholder.classList.add(
                     "hidden"
                 );
 
 
-                classificationResult.classList.remove(
-                    "hidden"
-                );
-
-
-                resultImage.src =
-                    data.image;
-
-
-                const formattedMovement =
-                    normalizeMovementName(
-                        data.label
+                    classificationResult.classList.remove(
+                        "hidden"
                     );
 
+                    resultImage.src =
+                        data.image;
 
-                predictionName.textContent =
-                    formattedMovement;
+
+                    const formattedMovement =
+                        normalizeMovementName(
+                            data.label
+                        );
 
 
-                // Simpan gerakan untuk tutorial
+                    predictionName.textContent =
+                        formattedMovement;
 
-                currentMovement =
-                    formattedMovement;
+
+            // =========================================================
+            // TAMPILKAN TOMBOL "PELAJARI GERAKAN"
+            // HANYA UNTUK KELAS YOSPAN
+            // =========================================================
+
+                    const yospanMovements = [
+                        "Gale-gale",
+                        "Jef",
+                        "Pacul Tiga",
+                        "Pancar",
+                        "Seka"
+                    ];
+
+                    const isYospanMovement = yospanMovements.includes(formattedMovement);
+
+                    if (isYospanMovement) {
+
+                        currentMovement = formattedMovement;
+
+                        // Tampilkan tombol Pelajari Gerakan
+                        learnButton.classList.remove("hidden");
+
+                    } else {
+
+                        currentMovement = null;
+
+                        // Sembunyikan tombol untuk bukan_yospan
+                        learnButton.classList.add("hidden");
+
+                    }
 
 
                 // =================================================

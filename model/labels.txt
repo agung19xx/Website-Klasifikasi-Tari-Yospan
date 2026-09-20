@@ -1,5 +1,6 @@
-Gale_gale
-Jef
-Pacul_Tiga
-Pancar
-Seka
+bukan_yospan
+gale_gale
+jef
+pacul_tiga
+pancar
+seka
